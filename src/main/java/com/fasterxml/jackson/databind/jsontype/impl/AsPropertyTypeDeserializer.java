@@ -111,7 +111,7 @@ public class AsPropertyTypeDeserializer extends AsArrayTypeDeserializer
     }
 
     @SuppressWarnings("resource")
-    protected final Object _deserializeTypedForId(JsonParser jp, DeserializationContext ctxt, TokenBuffer tb) throws IOException
+    protected Object _deserializeTypedForId(JsonParser jp, DeserializationContext ctxt, TokenBuffer tb) throws IOException
     {
         if(jp.getCurrentToken() == JsonToken.VALUE_STRING) {
             String typeId = jp.getText();
